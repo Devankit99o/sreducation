@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+
+.mobileLink {
+  display: none;
+}
+.menuButton {
+  display: none;
+}
+
+
+
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+
+  .links {
+    display: none;
+  }
+  
+/* styles.module.css */
+.mobileLink {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(3, 56, 3);  */
+  border: none; /* Remove border */
+  padding:0 auto;
+  margin: 0 auto;
+  width: 70%; ;
+  
+  
+}
+
+.mobileLink a {
+  flex: 1;
+  color: #ffffff; /* Initial white text color */
+  text-align: center; /* Center text alignment */
+  padding: 0.5rem; /* Padding for spacing inside each link */
+  font-size: 0.800rem; /* Small font size */
+  font-weight: 500; /* Medium font weight */
+  border: none; /* No border */
+ 
+  transition: color 0.3s ease-in-out; /* Smooth transition for color */
+}
+
+.mobileLink a:hover {
+  color: rgb(52, 48, 170); /* Green text color on hover */
+ /* background: none; */
+}
+
+.mobileLink .border-b {
+  border-bottom: none; /* No border between items */
+}
+
+.mobileLink .last:border-b {
+  border-bottom: none; /* No border for the last item */
+}
+
+
+
+.menuButton {
+ display: inline-block;
+  right: 0;
+  top: 0;
+  padding: 0.5rem;
+  z-index: 50;
+}
+
+  
+}

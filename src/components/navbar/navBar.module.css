@@ -1,0 +1,12 @@
+
+ .logo{
+    /* background-color: white; */
+
+    border-radius: 50%;         /* Makes the background circular */
+    padding: 0px; 
+    margin: 0px;              /* Adjust padding to control circle size */
+    display: flex;              /* Flexbox for centering */
+    justify-content: center;    /* Center the logo horizontally */
+    align-items: center;        /* Center the logo vertically */
+   
+ }
