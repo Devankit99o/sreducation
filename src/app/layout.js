@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body>
         <div >
         <Navbar  />
-        <main className="pt-[150px]">
+        <main>
         <section id="home">
             <Carousel  />
             </section>

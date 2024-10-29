@@ -19,13 +19,22 @@ const Links = () => {
     const handleScroll = (e, targetId, path) => {
         e.preventDefault();
         const element = document.getElementById(targetId);
+        const stickyHeight = 150; // Fixed height of the sticky navbar
+    
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            // Calculate target position with the offset for sticky navbar
+            const targetPosition = element.getBoundingClientRect().top + window.scrollY - stickyHeight;
+    
+            // Smoothly scroll to the calculated position
+            window.scrollTo({ top: targetPosition, behavior: 'smooth' });
         }
+    
         if (path) {
             window.history.pushState(null, '', `${path}`);
         }
     };
+    
+    
 
     useEffect(() => {
         // Redirect to "/" if not already there
