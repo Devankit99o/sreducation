@@ -1,5 +1,6 @@
 
 import './globals.css'
+
 import Navbar from '@/components/navbar/Navbar';
 import Carousel from '@/components/homepage/Carousel';
 import FacilitiesContainer from '@/components/facilities/FacilitiesContainer';
