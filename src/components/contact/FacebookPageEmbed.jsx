@@ -55,8 +55,6 @@ const FacebookPageEmbed = () => {
           src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/profile.php?id=100083442156234&tabs=timeline&width=1000&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
           className="absolute  w-full h-full bg-gray-100 rounded-lg" // Use w-full and h-full for full dimensions
           style={{ border: 'none', overflow: 'hidden' }} 
-          scrolling="no"
-          frameBorder="0"
           allowFullScreen
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
         ></iframe>

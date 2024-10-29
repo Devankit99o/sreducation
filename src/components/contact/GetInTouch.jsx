@@ -20,7 +20,7 @@ const GetInTouch = () => {
       {/* Content overlay */}
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center h-full m-2">
         {/* Left side: Facebook page embed */}
-        <div className="flex flex-col items-center justify-center h-full ml-auto md:ml-6 mr-auto">
+        <div className="flex flex-col items-center justify-center h-full ml-auto md:ml-6 mr-auto md:block hidden">
           <div className="relative w-[318px] h-[667px] bg-white rounded-3xl overflow-hidden">
             {/* Header with Facebook logo */}
             <div className="flex items-center justify-between bg-blue-600 h-10 px-2">
