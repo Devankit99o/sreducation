@@ -9,16 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18"
+    "@material-tailwind/react": "^2.1.9",
+    "@nextui-org/react": "^2.4.6",
+    "ical": "^0.8.0",
+    "mapbox-gl": "^3.7.0",
+    "next": "^14.2.5",
+    "node-fetch": "^3.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-map-gl": "^7.1.7",
+    "typography": "^0.16.24"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.24.7",
     "@types/node": "^20",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.12"
   }
 }

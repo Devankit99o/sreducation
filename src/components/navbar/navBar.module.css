@@ -2,11 +2,28 @@
  .logo{
     /* background-color: white; */
 
-    border-radius: 50%;         /* Makes the background circular */
+    border-radius: 50%;         
     padding: 0px; 
-    margin: 0px;              /* Adjust padding to control circle size */
-    display: flex;              /* Flexbox for centering */
-    justify-content: center;    /* Center the logo horizontally */
-    align-items: center;        /* Center the logo vertically */
-   
+    margin: 0px;              
+    display: flex;             
+    justify-content: center;    
+    align-items: center;     
  }
+
+ .outerNav {
+   position: relative;
+   width: 100%;
+}
+
+.sticky {
+   position: -webkit-sticky !important; 
+   position: sticky !important;
+   top: 0 !important;
+   z-index: 1000 !important; 
+   background-color: rgba(0, 0, 0, 0.5) !important; 
+   transition: background-color 0.3s ease-in-out !important; 
+   
+}
+
+
+

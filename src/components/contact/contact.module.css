@@ -1,0 +1,17 @@
+/* contact.module.css */
+
+.scrollbar_hidden::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+  }
+  
+  .scrollbar_hidden {
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  .fbScrollContainer {
+    /* Any additional styles you want to add for the scroll container */
+    height: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  

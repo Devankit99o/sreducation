@@ -18,16 +18,14 @@ export default function Carousel() {
     '/images/ofc.jpg',
     '/images/mdimg.jpg',
     '/images/mdimg1.jpg',
-   
-    
   ];
-
+  
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       handleNextSlide();
-    }, 5000); // Change slide every 4 seconds
+    }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, [currentSlide]);
@@ -43,18 +41,26 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative w-full  h-[60vh]  z-[-1]">
-      <AiOutlineLeft
-        onClick={handlePrevSlide}
-        className="absolute left-0 m-auto text-4xl inset-y-1/2 cursor-pointer text-green-600 z-20 hover:text-red-600 transition-colors duration-200"
-      />
+
+    <div className="relative w-full h-[40vh] md:h-[65vh] " id="home">
+      <div className="absolute inset-0 flex items-center justify-between">
+        <AiOutlineLeft
+          onClick={handlePrevSlide}
+          className="text-4xl cursor-pointer text-green-800 hover:text-red-600 transition-colors duration-200 z-10"
+        />
+        <AiOutlineRight
+          onClick={handleNextSlide}
+          className="text-4xl cursor-pointer text-green-800 hover:text-red-600 transition-colors duration-300 z-10"
+        />
+      </div>
+      
       <div className="w-full h-full flex overflow-hidden relative m-auto">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
-          className="relative z-10 w-full h-full"
+          className="relative w-full h-full"
         >
-          <div className="relative w-full h-full z-0">
+          <div className="relative w-full h-full">
             {images.map((image, index) => (
               <div
                 key={index}
@@ -76,10 +82,6 @@ export default function Carousel() {
           </div>
         </Swipe>
       </div>
-      <AiOutlineRight
-        onClick={handleNextSlide}
-        className="absolute right-0 m-auto text-4xl inset-y-1/2 cursor-pointer text-green-600 z-20 hover:text-red-600 transition-colors duration-300"
-      />
     </div>
   );
 }

@@ -1,7 +1,5 @@
-const Gallery = () => {
-    return (
-        <h2>This is the Gallery page</h2>
-    );
-};
-
-export default Gallery;
+const page = () => {
+    return null; // No content to render
+  };
+  
+  export default page;

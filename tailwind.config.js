@@ -6,7 +6,14 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      extend: {
+        fontFamily: {
+          roboto: ['"Roboto"', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        opensans: ['"Open Sans"', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        },
+      },
+    },
   },
   plugins: [],
 }

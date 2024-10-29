@@ -1,7 +1,7 @@
-const About=()=>{
-    return (
-        <div>this is about us</div>
-    )
-}
 
-export default About
+
+const page = () => {
+    return null; // No content to render
+  };
+  
+  export default page;

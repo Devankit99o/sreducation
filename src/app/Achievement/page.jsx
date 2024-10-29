@@ -1,8 +1,5 @@
-const Achievement = () => {
-    return (
-        <h2>This is Achievement</h2>
-    );
-};
-
-export default Achievement;
-
+const page = () => {
+    return null; // No content to render
+  };
+  
+  export default page;

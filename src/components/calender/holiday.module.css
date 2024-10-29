@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+
+.card-custom {
+    height: 750px; /* Set a custom height for the card */
+    width: 500px; /* Set a custom width for the card */
+  }
+  
+  .card-header-custom {
+    height: 150px; /* Height of the card header */
+    width: 100%; /* Full width of the card */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow to the header */
+    align-items: top-left; /* Align the header to the top-left */
+  }
+  .cabin {
+    font-family: "sans-serif";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+  
+  }
+  
+  .cabin_sketch_bold {
+    font-family: "Cabin Sketch"," sans-serif";
+    font-weight: 2000;
+    font-style: normal;
+    font-size: 70px;
+
+  }
+  
